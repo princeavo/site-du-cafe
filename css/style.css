@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  background-image: url("../images/sample_menu_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 /**Here we have the header style*/
 header {
   display: flex;
@@ -15,7 +22,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #eee, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, #eee, rgba(0, 0, 0, 0.3));
 }
 header #logo {
   /* background-color: #17832281; */
@@ -28,11 +35,34 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
   padding-inline-end: 20px;
 }
 header nav li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+/**Presentation section*/
+#presentation {
+  height: 63vh;
+  background-image: url("../images/sample_key.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding-inline-start: 10%;
+}
+#presentation div {
+  position: relative;
+  top: 20px;
+}
+#presentation h2 {
+  font-size: 2.8rem;
+  margin-block-end: 2px;
+}
+#presentation span {
+  font-size: 18px;
 }
