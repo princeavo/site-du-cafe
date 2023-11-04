@@ -66,3 +66,34 @@ header nav li a {
 #presentation span {
   font-size: 18px;
 }
+/**Second section styles*/
+#section-2 {
+  padding-block-start: 30px;
+  padding-inline: 10%;
+  background-color: #fff;
+}
+#section-2 #top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+}
+#section-2 #top h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 530;
+}
+#section-2 .flex {
+  display: flex;
+  gap: 30px;
+}
+#section-2 .flex #description {
+  font-size: 15px;
+  font-weight: 250;
+}
+#section-2 .flex img {
+  width: 425px;
+  height: 425px;
+}
