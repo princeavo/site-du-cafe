@@ -190,6 +190,37 @@ section .content {
   font-size: 20px;
   opacity: 0.7;
 }
+#section-4 {
+  padding-inline: 10%;
+  background-color: #fff;
+  padding-block-start: 50px;
+
+  padding-block-end: 80px;
+}
+#section-4 .title {
+  margin-bottom: 30px;
+}
+#section-4 .title h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 550;
+}
+#section-4 .title p {
+  text-align: center;
+}
+#section-4 .bloc {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+#section-4 .info {
+  margin-bottom: 20px;
+}
+#section-4 .map iframe {
+  width: 100%;
+  height: 88vh;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -219,4 +250,9 @@ footer .div-1 img {
 footer .div-2 {
   text-align: center;
   font-size: 13px;
+}
+
+#sectionContact {
+  height: 90vh;
+  background-color: #fff;
 }
