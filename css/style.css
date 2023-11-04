@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
   background-image: url("../images/sample_menu_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 /**Here we have the header style*/
 header {
@@ -252,7 +252,43 @@ footer .div-2 {
   font-size: 13px;
 }
 
+/**Contact style here*/
+
 #sectionContact {
-  height: 90vh;
+  height: 100vh;
   background-color: #fff;
+  padding-top: 10%;
+  padding-inline: 10%;
+}
+#sectionContact .title {
+  margin-block-end: 70px;
+}
+#sectionContact .title h2 {
+  text-align: center;
+  font-size: 40px;
+}
+#sectionContact .title p {
+  text-align: center;
+}
+#sectionContact .contactBox {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+#sectionContact .contactBox label {
+  width: 300px;
+  background-color: #758498;
+  padding: 25px;
+}
+#sectionContact .contactBox input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+}
+#sectionContact .contactBox input:hover {
+  border: 1px solid #888;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
