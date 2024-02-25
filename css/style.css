@@ -23,6 +23,7 @@ header {
   left: 0;
   right: 0;
   background: linear-gradient(to right, #eee, rgba(0, 0, 0, 0.3));
+  padding-inline: 2em;
 }
 header #logo {
   /* background-color: #17832281; */
@@ -36,7 +37,6 @@ header nav ul {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  padding-inline-end: 20px;
 }
 header nav li a {
   text-decoration: none;
@@ -46,6 +46,7 @@ header nav li a {
 /**Presentation section*/
 #presentation {
   height: 63vh;
+  max-height: 700px;
   background-image: url("../images/sample_key.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,11 +61,11 @@ header nav li a {
   top: 20px;
 }
 #presentation h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-block-end: 2px;
 }
 #presentation span {
-  font-size: 18px;
+  font-size: 1.3em;
 }
 /**Second section styles*/
 #section-2 {
@@ -219,12 +220,13 @@ section .content {
 #section-4 .map iframe {
   width: 100%;
   height: 88vh;
+  max-height: 500px;
 }
 
 footer {
   background-color: #333;
   color: #fff;
-  padding-block-end: 20px;
+  padding-block: 20px;
 }
 footer ul {
   display: flex;
@@ -257,8 +259,9 @@ footer .div-2 {
 #sectionContact {
   height: 100vh;
   background-color: #fff;
-  padding-top: 10%;
-  padding-inline: 10%;
+  padding-top: 70px;
+  padding-inline: 2em;
+  margin-bottom: 70px;
 }
 #sectionContact .title {
   margin-block-end: 70px;
@@ -274,6 +277,8 @@ footer .div-2 {
   display: flex;
   gap: 5px;
   margin-bottom: 5px;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 #sectionContact .contactBox label {
   width: 300px;
@@ -283,6 +288,9 @@ footer .div-2 {
 #sectionContact .contactBox input {
   flex-grow: 1;
   border: 1px solid #ddd;
+  outline: 0;
+  padding: 5px;
+  font-size: 1.1em;
 }
 #sectionContact .contactBox input:hover {
   border: 1px solid #888;
@@ -291,4 +299,85 @@ footer .div-2 {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+}
+
+
+
+@media all and (max-width:1450px) {
+  #section-2,#section-3,#section-4{
+    padding-inline: 2em;
+  }
+  #section-3 > div{
+    margin-block: 3em;
+  }
+}
+@media all and (max-width:1290px){
+  section .content{
+    flex-wrap: wrap ;
+    justify-content: center;
+  }
+  .content > div img{
+    object-fit: cover;
+  }
+  .content > div{
+    width: 100%;
+  }
+  .content > div .description{
+    flex: 1;
+  }
+  #section-3 .title h3{
+    margin-bottom: 1em;
+  }
+}
+@media all and (max-width:750px) {
+  #section-3 .subsection-1 .content > div img{
+    width: 300px;
+  }
+  .subsection-2 .content > div{
+    flex: 1;
+  }
+  #presentation{
+    padding-inline-start: 1.5em;
+  }
+  #section-2 .flex img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media all and (max-width:600px) {
+  #section-2 .flex{
+    flex-wrap: wrap-reverse;
+  }
+  #section-2 .flex img{
+    width: 100%;
+  }
+}
+@media all and (max-width:500px) {
+  .content > div{
+    flex-wrap: wrap;
+  }
+  #section-3 .subsection-1 .content > div img{
+    width: 100%;
+  }
+  .subsection-2 .content > div > div.bloc{
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subsection-2 .content .bloc > div{
+    gap: 0;
+    justify-content: space-around;
+  }
+  .subsection-2 .content .bloc .price{
+    text-align: center;
+  }
+}
+@media all and (max-width:325px) {
+  .subsection-2 .content{
+    display: block;
+  }
+  .subsection-2 .content > div{
+    margin-inline: auto;
+  }
 }
